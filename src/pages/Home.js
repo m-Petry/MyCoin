@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Logo from "../components/Logo";
+import Navigation from "../components/Navigation";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <div className="fixed w-screen h-screen bg-gray-300 -z-10" />
       <Logo />
       <Outlet />
+      <Navigation />
     </main>
   );
 };
