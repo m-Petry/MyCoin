@@ -3,10 +3,11 @@ import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
+    <main className="first-letter: relative flex h-full w-full flex-col content-center items-center bg-red font-nunito text-white ">
       Home
-      <Outlet />;
-    </div>
+      <div className="h-screen w-screen bg-gray-100" />
+      <Outlet />
+    </main>
   );
 };
 
