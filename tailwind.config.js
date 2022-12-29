@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: { nunito: "Nunito" }
     },
+
     colors: {
       gray: { 100: "#808080", 200: "#323232", 300: "#212121" },
       white: "#fff",
@@ -20,5 +21,5 @@ module.exports = {
       base: "16px"
     }
   },
-  plugins: []
+  plugins: [require("tailwind-scrollbar")]
 };
