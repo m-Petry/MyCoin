@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./App";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Crypto from "./pages/Crypto";
 import Trending from "./pages/Trending";
 import Saved from "./pages/Saved";
+import CryptoDetails from "./components/CryptoDetails";
 
-// Create the component path = page
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,15 +17,33 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Crypto />
+        element: <Crypto />,
+        children: [
+          {
+            path: ":coinId",
+            element: <CryptoDetails />
+          }
+        ]
       },
       {
         path: "/trending",
-        element: <Trending />
+        element: <Trending />,
+        children: [
+          {
+            path: ":coinId",
+            element: <CryptoDetails />
+          }
+        ]
       },
       {
         path: "/saved",
-        element: <Saved />
+        element: <Saved />,
+        children: [
+          {
+            path: ":coinId",
+            element: <CryptoDetails />
+          }
+        ]
       }
     ]
   }
