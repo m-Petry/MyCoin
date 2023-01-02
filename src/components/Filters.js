@@ -48,7 +48,7 @@ const Filters = () => {
             <img src={submitIcon} alt="submit" className="" />
           </button>
         </form>
-        <div className="relative flex flex-row items-center mb-2 text-center justify-evenly">
+        <div className="relative flex flex-row items-center text-center justify-evenly">
           <label className="relative flex items-center justify-center md:mb-0">
             <span className="mx-2 font-bold">Sort by: </span>
             <select
