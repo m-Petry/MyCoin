@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav
-      className="mt-16 flex w-[40%] justify-around rounded-lg
+      className="mt-20 flex w-[70%] justify-around rounded-lg
   border border-cyan align-middle
   "
     >
@@ -12,7 +12,7 @@ const Navigation = () => {
         to="/"
         end
         className={({ isActive }) => {
-          return `m-2.5 w-full text-center font-nunito text-base
+          return `m-2.5 transform rounded-md px-2 py-1 text-white shadow-lg outline-none transition-transform focus:ring-2 focus:ring-gray-200 active:scale-75 md:px-10 lg:px-20
 ${
   isActive
     ? "bg-cyan text-gray-300"
@@ -27,7 +27,7 @@ ${
       <NavLink
         to="/trending"
         className={({ isActive }) => {
-          return `m-2.5 w-full text-center font-nunito text-base
+          return `m-2.5 transform rounded-md px-2 py-1 text-white shadow-lg outline-none transition-transform focus:ring-1 focus:ring-gray-200 active:scale-75 md:px-10 lg:px-20
 ${
   isActive
     ? "bg-cyan text-gray-300"
@@ -42,7 +42,7 @@ ${
       <NavLink
         to="/saved"
         className={({ isActive }) => {
-          return `m-2.5 w-full text-center font-nunito text-base
+          return `m-2.5 transform rounded-md px-2 py-1 text-white shadow-lg outline-none transition-transform focus:ring-1 focus:ring-gray-200 active:scale-75 md:px-10 lg:px-20
 ${
   isActive
     ? "bg-cyan text-gray-300"

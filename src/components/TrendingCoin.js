@@ -32,14 +32,12 @@ const TrendingCoin = ({ data }) => {
             <span className="text-cyan">{data.market_cap_rank}</span>
           </h3>
           <h3 className="txt-base my-0.5 flex items-center">
-            <span className="text-gray-100 capitalize">
-              price (in btc):&nbsp;
-            </span>
+            <span className="text-gray-100 capitalize">price:&nbsp;</span>
             <span className="text-cyan">
               {new Intl.NumberFormat("en-IN", {
                 style: "currency",
                 currency: "btc",
-                maximumSignificantDigits: 5
+                maximumSignificantDigits: 3
               }).format(data.price_btc)}
             </span>
           </h3>
