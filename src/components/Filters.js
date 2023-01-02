@@ -21,16 +21,16 @@ const Filters = () => {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full text-center border-2 border-gray-100 rounded-lg md:flex-row">
-      <Search />
+    <div className="relative flex flex-col items-center justify-center w-full text-center border-2 border-gray-100 rounded-lg md:block md:flex-row md:justify-around">
       <div className="flex flex-col md:mr-7 md:flex-row">
         <form
           className="relative flex items-center justify-center font-nunito "
           onSubmit={handleCurrencySubmit}
         >
+          <Search />
           <label
             htmlFor="currency"
-            className="relative flex items-center justify-center my-2 mr-2 font-bold"
+            className="relative flex items-center justify-center mx-2 my-2 font-bold"
           >
             Currency:{" "}
           </label>
@@ -38,15 +38,18 @@ const Filters = () => {
             type="text"
             name="currency"
             ref={currencyRef}
-            placeholder="$"
-            className="w-16 pl-2 leading-4 bg-gray-200 border border-transparent rounded required outline-0 placeholder:text-gray-100 focus:border-cyan "
+            placeholder="USD"
+            className="w-16 pl-2 leading-4 bg-gray-200 border border-transparent rounded required outline-0 placeholder:text-gray-100 focus:border-cyan"
           />
-          <button type="submit" className="ml-1 cursor-pointer outline-cyan">
-            <img src={submitIcon} alt="submit" className="w-full h-auto" />
+          <button
+            type="submit"
+            className="ml-1 cursor-pointer min-h-fit min-w-fit outline-cyan md:mr-2"
+          >
+            <img src={submitIcon} alt="submit" className="" />
           </button>
         </form>
 
-        <label className="relative flex items-center justify-center">
+        <label className="relative flex items-center justify-center mb-2 md:mb-0">
           <span className="mr-2 font-bold">Sort by: </span>
           <select
             name="sortby"
@@ -76,7 +79,7 @@ const Filters = () => {
             width="1em"
             height="1em"
             viewBox="0 0 24 24"
-            className="w-full h-full fill-cyan"
+            className="min-w-full min-h-full fill-cyan"
             style={{
               msTransform: "rotate(360deg)",
               WebkitTransform: "rotate(360deg)",
