@@ -36,8 +36,8 @@ const SearchInput = ({ handleSearch }) => {
           name="search"
           onChange={handleInput}
           value={searchText}
-          className="w-full pl-4 bg-gray-200 border border-transparent rounded required outline-0 placeholder:text-gray-100 focus:border-cyan"
-          placeholder="Search Crypto"
+          className="border-transparent required w-full rounded border bg-gray-200 pl-4 outline-0 placeholder:text-gray-100 focus:border-cyan  md:min-w-[160px]"
+          placeholder="Search"
         />
         <button type="submit" className="absolute cursor-pointer right-1">
           <img src={searchIcon} className="w-full h-auto" alt="search" />
