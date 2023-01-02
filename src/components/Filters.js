@@ -1,8 +1,6 @@
 import React, { useContext, useRef } from "react";
 import Search from "./Search";
 import submitIcon from "../assets/submit-icon.svg";
-import selectIcon from "../assets/select-icon.svg";
-
 import { CryptoContext } from "./../context/CryptoContext";
 
 const Filters = () => {
@@ -23,35 +21,33 @@ const Filters = () => {
   };
 
   return (
-    <div
-      className="relative flex items-center justify-between w-full h-12 border-2 border-gray-100 rounded-lg "
-    >
+    <div className="relative flex flex-col items-center justify-center w-full text-center border-2 border-gray-100 rounded-lg md:flex-row">
       <Search />
-      <div className="flex mr-7">
+      <div className="flex flex-col md:mr-7 md:flex-row">
         <form
-          className="relative flex items-center mr-12 font-nunito "
+          className="relative flex items-center justify-center font-nunito "
           onSubmit={handleCurrencySubmit}
         >
           <label
             htmlFor="currency"
-            className="relative flex items-center justify-center mr-2 font-bold "
+            className="relative flex items-center justify-center my-2 mr-2 font-bold"
           >
-            currency:{" "}
+            Currency:{" "}
           </label>
           <input
             type="text"
             name="currency"
             ref={currencyRef}
-            placeholder="usd"
+            placeholder="$"
             className="w-16 pl-2 leading-4 bg-gray-200 border border-transparent rounded required outline-0 placeholder:text-gray-100 focus:border-cyan "
           />
-          <button type="submit" className="ml-1 cursor-pointer">
+          <button type="submit" className="ml-1 cursor-pointer outline-cyan">
             <img src={submitIcon} alt="submit" className="w-full h-auto" />
           </button>
         </form>
 
         <label className="relative flex items-center justify-center">
-          <span className="mr-2 font-bold">sort by: </span>
+          <span className="mr-2 font-bold">Sort by: </span>
           <select
             name="sortby"
             className="rounded bg-gray-200 py-0.5 
@@ -68,17 +64,10 @@ const Filters = () => {
             <option value="gecko_desc">gecko desc</option>
             <option value="gecko_asc">gecko asc</option>
           </select>
-          <img
-            src={selectIcon}
-            alt="submit"
-            className="pointer-events-none absolute
-         right-1 top-2 h-auto w-[1rem]
-         "
-          />
         </label>
         <button
-          className="transition-ease relative ml-4 w-[2rem] transition-all
-        hover:scale-110
+          className="transition-ease relative ml-4 hidden w-[2rem] transition-all hover:scale-110
+        md:block
         "
           onClick={resetFunction}
         >
