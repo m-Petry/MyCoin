@@ -48,16 +48,22 @@ const CryptoDetails = () => {
 
   return ReactDOM.createPortal(
     <div
-      className="fixed top-0 flex items-center justify-center w-full h-full bg-gray-200 first-letter: bg-opacity-30 font-open backdrop-blur-sm "
+      className="first-letter: absolute top-0 flex h-[130%] w-full items-center justify-center bg-gray-200 bg-opacity-30 font-open backdrop-blur-sm md:h-full "
       onClick={close}
     >
       <div
-        className="relative h-[75%] w-[65%] rounded-lg bg-gray-300 bg-opacity-75 text-white"
+        className="relative h-full w-[90%] rounded-lg bg-gray-300 bg-opacity-75 text-white lg:h-[80] lg:w-[75%]"
         onClick={(e) => e.stopPropagation()}
       >
+        <button
+          className="absolute top-0 right-0 z-50 px-3 py-1 mt-4 mr-4 text-white bg-gray-200 border-gray-100 rounded-md border-1 text-md hover:bg-gray-100"
+          onClick={close}
+        >
+          X
+        </button>
         {data ? (
-          <div className="flex items-center justify-between w-full h-full p-4">
-            <div className="flex h-full w-[45%] flex-col pr-2 ">
+          <div className="flex flex-col items-center justify-between w-full h-full p-4 lg:flex-row">
+            <div className="flex h-full w-[85%] flex-col pr-2 lg:w-[55%] ">
               <div className="flex items-center w-full">
                 <img
                   className="mx-1.5 h-[3rem] w-[3rem]"
@@ -139,7 +145,7 @@ const CryptoDetails = () => {
                     }).format(data.market_data.market_cap[currency])}
                   </h2>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col ml-4">
                   <span className="text-sm text-gray-100 capitalize">
                     fully diluted valuation
                   </span>
@@ -262,7 +268,7 @@ const CryptoDetails = () => {
                 </div>
 
                 <div className="flex flex-col content-start">
-                  <span className="text-sm text-gray-100 capitalize">
+                  <span className="ml-2 text-sm text-gray-100 capitalize">
                     sentiment
                   </span>
                   <div className="flex justify-between">
@@ -322,12 +328,12 @@ const CryptoDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="flex h-full w-[55%] flex-col pl-3 ">
+            <div className="flex h-full w-[90%] flex-col pl-3 lg:mt-20 lg:w-[55%]">
               <Chart id={data.id} />
 
-              <div className="flex flex-col mt-4">
+              <div className="flex flex-col mt-8">
                 <h3 className="py-1 text-white">
-                  <span className="mr-1 text-gray-100 capitalize">
+                  <span className="text-gray-100 capitalize mt-50">
                     market cap rank:{" "}
                   </span>{" "}
                   {data.market_cap_rank}{" "}
@@ -349,7 +355,7 @@ const CryptoDetails = () => {
               </div>
             </div>
 
-            <div className="absolute flex items-center bottom-8 right-8">
+            <div className="flex items-center lg:absolute lg:bottom-8 lg:right-8">
               {data.links.repos_url.github[0] && (
                 <a
                   className="px-1 text-lg"
@@ -388,8 +394,8 @@ const CryptoDetails = () => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
+                    width="1.2em"
+                    height="1.2em"
                     viewBox="0 0 1024 1024"
                     style={{
                       msTransform: "rotate(360deg)",

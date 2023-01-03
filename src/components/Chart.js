@@ -39,7 +39,7 @@ const ChartComponent = ({ data, currency, type }) => {
         <Line
           type="monotone"
           dataKey={type}
-          stroke="#14ffec"
+          stroke="#F0B90B"
           strokeWidth={"1px"}
         />
         <CartesianGrid stroke="#323232" />
@@ -94,7 +94,7 @@ const Chart = ({ id }) => {
   return (
     <div className="h-[60%] w-full">
       <ChartComponent data={chartData} currency={currency} type={type} />
-      <div className="flex">
+      <div className="flex -ml-8 lg:ml-0">
         <button
           className={`ml-2 rounded bg-opacity-25 py-0.5 px-1.5 text-sm capitalize ${
             type === "prices"
