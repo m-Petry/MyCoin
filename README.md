@@ -24,7 +24,7 @@
 👤 **Marcelo Petry**
 
 - Website: http://marcelopetry.com/
-- Github: [@https:\/\/github.com\/m-Petry](https://github.com/https://github.com/m-Petry)
+- Github: [@m-Petry](https://github.com/m-Petry)
 - LinkedIn: [@https:\/\/www.linkedin.com\/in\/m-petry\/](https://linkedin.com/in/https://www.linkedin.com/in/m-petry/)
 
 ## Show your support
