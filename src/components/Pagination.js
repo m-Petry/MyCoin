@@ -18,7 +18,7 @@ const PerPage = () => {
 
   return (
     <form
-      className="relative flex items-center mr-1 font-nunito md:mr-6 lg:mr-12 "
+      className="relative flex items-center mr-1 font-open md:mr-6 lg:mr-12 "
       onSubmit={handleSubmit}
     >
       <label

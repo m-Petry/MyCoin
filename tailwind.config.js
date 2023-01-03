@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: { nunito: "Nunito" },
+      fontFamily: { open: "Open Sans" },
       animation: {
         "spin-slow": "spin 0.6s linear reverse"
       }

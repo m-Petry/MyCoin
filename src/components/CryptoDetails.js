@@ -48,7 +48,7 @@ const CryptoDetails = () => {
 
   return ReactDOM.createPortal(
     <div
-      className="fixed top-0 flex items-center justify-center w-full h-full bg-gray-200 first-letter: bg-opacity-30 font-nunito backdrop-blur-sm "
+      className="fixed top-0 flex items-center justify-center w-full h-full bg-gray-200 first-letter: bg-opacity-30 font-open backdrop-blur-sm "
       onClick={close}
     >
       <div

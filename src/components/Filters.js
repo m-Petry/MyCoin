@@ -24,7 +24,7 @@ const Filters = () => {
     <div className="relative flex flex-col items-center justify-center w-full text-center border-2 border-gray-100 rounded-lg md:block md:flex-row md:justify-around">
       <div className="flex flex-col md:mr-7 md:flex-row">
         <form
-          className="relative flex items-center justify-center font-nunito "
+          className="relative flex items-center justify-center font-open "
           onSubmit={handleCurrencySubmit}
         >
           <Search />
