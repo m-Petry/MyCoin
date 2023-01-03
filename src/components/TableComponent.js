@@ -63,8 +63,8 @@ const TableComponent = () => {
                 <th className="py-1">asset</th>
                 <th className="py-1">name</th>
                 <th className="py-1">price</th>
-                <th className="py-1">total volume</th>
-                <th className="py-1">market cap change</th>
+                <th className="hidden py-1 lg:table-cell">total volume</th>
+                <th className="hidden py-1 lg:table-cell">market cap change</th>
                 <th className="hidden py-1 lg:table-cell">1H</th>
                 <th className="hidden py-1 lg:table-cell">24H</th>
                 <th className="hidden py-1 lg:table-cell">7D</th>
@@ -101,8 +101,10 @@ const TableComponent = () => {
                         currency: currency
                       }).format(data.current_price)}
                     </td>
-                    <td className="py-4">{data.total_volume}</td>
-                    <td className="py-4">
+                    <td className="hidden py-4 lg:table-cell">
+                      {data.total_volume}
+                    </td>
+                    <td className="hidden py-4 lg:table-cell">
                       {data.market_cap_change_percentage_24h}%
                     </td>
                     <td
@@ -164,10 +166,10 @@ const TableComponent = () => {
         ) : null}
       </div>
       <div className="mt-4 flex h-[2rem] items-center justify-between capitalize">
-        <span>
+        <span className="hidden lg:table-cell">
           Data provided by{" "}
           <a
-            className="text-cyan"
+            className="hidden text-cyan lg:table-cell"
             href="http://www.coingecko.com"
             rel="noreferrer"
             target={"_blank"}
