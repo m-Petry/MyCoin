@@ -1,41 +1,37 @@
-# React Website Tutorial: ⭐Build Feature Rich Crypto Screener App with Tailwind CSS
+# Welcome to MyCoin 👋
+![Version](https://img.shields.io/badge/version-0.5.0-blue.svg?cacheSeconds=2592000)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/m-Petry/MyCoin)
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/CryptoBucks-A-crypto-screener-application?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/CryptoBucks-A-crypto-screener-application?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+> Crypto Price, Charts and Market Cap Web App
 
-This repository contains starter code for Crypto Screener Application in ReactJS. <br />
+### 🏠 [Homepage](https://my-coin.netlify.app/)
 
-View Demo👇: <br />
-https://crypto-bucks.netlify.app/ <br />
+### ✨ [Demo](https://my-coin.netlify.app/)
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-https://youtu.be/JPlVb3t6kx8 <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/JPlVb3t6kx8?style=social)](https://youtu.be/cT160dOzpGY)<br />
+## Install
 
-<h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://www.buymeacoffee.com/CodeBucks" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br />
+```sh
+npm install
+```
 
-### Images of The Crypto Screener Website:
+## Usage
 
-![Crypto](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Crypto.png)
-![Crypto-CryptoDetails](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Crypto-CryptoDetails.png)
-![Trending](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Trending.png)
-![Saved](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Saved.png)
-![Trending-Mobile](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Trending-Mobile.png)
-![Crypto-CryptoDetails-Mobile](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Crypto-CryptoDetails-Mobile.png)
-![Crypto-Mobile](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Crypto-Mobile.png)
+```sh
+npm run start
+```
 
-### Resources Used in This Project
+## Author
 
-- Fonts from https://fonts.google.com/ <br />
-- Icons from https://iconify.design/ <br />
-- API from https://www.coingecko.com/en/api <br />
+👤 **Marcelo Petry**
 
-### External Libraries used in this project:
+* Website: http://marcelopetry.com/
+* Github: [@https:\/\/github.com\/m-Petry](https://github.com/https:\/\/github.com\/m-Petry)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/m-petry\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/m-petry\/)
 
-- [Tailwind css](https://tailwindcss.com/) <br />
-- [recharts](https://recharts.org/en-US/) <br />
+## Show your support
+
+Give a ⭐️ if this project helped you!
 
 
-
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
