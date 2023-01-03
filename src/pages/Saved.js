@@ -61,14 +61,14 @@ const Saved = () => {
           <table className="w-full table-auto">
             <thead className="text-base font-medium text-gray-100 capitalize border-b border-gray-100 ">
               <tr>
-                <th className="py-1 ">asset</th>
+                <th className="py-1">asset</th>
                 <th className="py-1">name</th>
                 <th className="py-1">price</th>
-                <th className="py-1">total volume</th>
-                <th className="py-1">market cap change</th>
-                <th className="py-1">1H</th>
-                <th className="py-1">24H</th>
-                <th className="py-1">7D</th>
+                <th className="hidden py-1 lg:table-cell">total volume</th>
+                <th className="hidden py-1 lg:table-cell">market cap change</th>
+                <th className="hidden py-1 lg:table-cell">1H</th>
+                <th className="hidden py-1 lg:table-cell">24H</th>
+                <th className="hidden py-1 lg:table-cell">7D</th>
               </tr>
             </thead>
             <tbody>
@@ -79,7 +79,7 @@ const Saved = () => {
                       key={data.id}
                       className="text-base text-center border-b border-gray-100 hover:bg-gray-200"
                     >
-                      <td className="flex items-center py-4 uppercase">
+                      <td className="flex items-center justify-center py-4 uppercase">
                         <SaveBtn data={data} />
 
                         <img
@@ -106,13 +106,17 @@ const Saved = () => {
                           currency: currency
                         }).format(data.current_price)}
                       </td>
-                      <td className="py-4">{data.total_volume}</td>
+                      <td className="hidden py-4 lg:table-cell">
+                        {data.total_volume}
+                      </td>
                       <td
-                        className={
+                        className={`&{
                           data.market_cap_change_percentage_24h < 0
                             ? "py-4 text-red"
                             : "py-4 text-green"
                         }
+                        hidden lg:table-cell
+                        `}
                       >
                         {Number(data.market_cap_change_percentage_24h).toFixed(
                           2
@@ -120,11 +124,14 @@ const Saved = () => {
                         %
                       </td>
                       <td
-                        className={
-                          data.price_change_percentage_1h_in_currency < 0
-                            ? "py-4 text-red"
-                            : "py-4 text-green"
-                        }
+                        className={`
+                          ${
+                            data.price_change_percentage_1h_in_currency < 0
+                              ? "py-4 text-red"
+                              : "py-4 text-green"
+                          }
+                            hidden lg:table-cell
+                            `}
                       >
                         {Number(
                           data.price_change_percentage_1h_in_currency
@@ -132,11 +139,14 @@ const Saved = () => {
                         %
                       </td>
                       <td
-                        className={
-                          data.price_change_percentage_24h_in_currency < 0
-                            ? "py-4 text-red"
-                            : "py-4 text-green"
-                        }
+                        className={`
+                          ${
+                            data.price_change_percentage_24h_in_currency < 0
+                              ? "py-4 text-red"
+                              : "py-4 text-green"
+                          }
+                          hidden lg:table-cell
+                          `}
                       >
                         {Number(
                           data.price_change_percentage_24h_in_currency
@@ -144,11 +154,14 @@ const Saved = () => {
                         %
                       </td>
                       <td
-                        className={
-                          data.price_change_percentage_7d_in_currency < 0
-                            ? "py-4 text-red"
-                            : "py-4 text-green"
-                        }
+                        className={`
+                          ${
+                            data.price_change_percentage_7d_in_currency < 0
+                              ? "py-4 text-red"
+                              : "py-4 text-green"
+                          }
+                          hidden lg:table-cell
+                          `}
                       >
                         {Number(
                           data.price_change_percentage_7d_in_currency

@@ -28,7 +28,7 @@ const SearchInput = ({ handleSearch }) => {
   return (
     <>
       <form
-        className="relative flex items-center ml-7 font-nunito md:mr-3"
+        className="relative flex items-center mx-2 font-nunito md:mr-3"
         onSubmit={handleSubmit}
       >
         <input
@@ -36,15 +36,15 @@ const SearchInput = ({ handleSearch }) => {
           name="search"
           onChange={handleInput}
           value={searchText}
-          className="border-transparent required w-full rounded border bg-gray-200 pl-4 outline-0 placeholder:text-gray-100 focus:border-cyan  md:min-w-[160px]"
-          placeholder="Search"
+          className="border-transparent required w-28 rounded border bg-gray-200 pl-2 outline-0 placeholder:text-gray-100 focus:border-cyan md:w-full md:min-w-[160px] md:pl-4"
+          placeholder="Crypto"
         />
         <button type="submit" className="absolute cursor-pointer right-1">
           <img src={searchIcon} className="w-full h-auto" alt="search" />
         </button>
       </form>
       {searchText.length > 0 ? (
-        <ul className="absolute right-0 z-50 py-2 overflow-x-hidden translate-x-48 bg-gray-200 rounded top-11 h-96 w-96 bg-opacity-60 backdrop-blur-md scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-100">
+        <ul className="absolute right-0 z-50 py-2 overflow-x-hidden translate-x-48 bg-gray-200 rounded top-11 h-96 w-80 bg-opacity-60 backdrop-blur-md scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-100">
           {searchData ? (
             searchData.map((coin) => {
               return (
