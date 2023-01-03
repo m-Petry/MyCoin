@@ -8,6 +8,8 @@
 
 ### ✨ [Demo](https://my-coin.netlify.app/)
 
+<br>
+<br>
 ### Project Images
 
 <img src="./public/ProjectImages/01.png" alt="Website Image">
