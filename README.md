@@ -2,23 +2,9 @@
 ![Version](https://img.shields.io/badge/version-0.5.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/m-Petry/MyCoin)
 
-> Crypto Price, Charts and Market Cap Web App
-
-### 🏠 [Homepage](https://my-coin.netlify.app/)
+> My Coin is a powerful and user-friendly cryptocurrency web app that allows you to track the latest prices, charts, and market cap for your favorite coins. Built using the latest technologies such as React, Tailwind CSS, and Recharts, My Coin delivers a seamless and visually appealing experience for all users. With real-time data from the coingecko API, you can stay up-to-date on the latest market movements and make informed decisions about your portfolio. Whether you're a seasoned crypto trader or just starting out, My Coin has the features and functionality you need to succeed in the world of cryptocurrency.
 
 ### ✨ [Demo](https://my-coin.netlify.app/)
-
-## Install
-
-```sh
-npm install
-```
-
-## Usage
-
-```sh
-npm run start
-```
 
 ## Author
 
