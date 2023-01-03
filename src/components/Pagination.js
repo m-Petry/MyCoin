@@ -167,7 +167,7 @@ const Pagination = () => {
               </button>
             </li>
           ) : null}
-          <li className="px-2">
+          <li className="px-2 md:pr-0 md:pl-20">
             <button className="w-8 outline-0 hover:text-cyan" onClick={next}>
               <img
                 className="w-full h-auto"
