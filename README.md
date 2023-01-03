@@ -25,7 +25,7 @@
 
 - Website: http://marcelopetry.com/
 - Github: [@m-Petry](https://github.com/m-Petry)
-- LinkedIn: [@https:\/\/www.linkedin.com\/in\/m-petry\/](https://linkedin.com/in/https://www.linkedin.com/in/m-petry/)
+- LinkedIn: [@m-petry](https://linkedin.com/in/m-petry/)
 
 ## Show your support
 
