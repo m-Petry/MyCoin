@@ -165,7 +165,7 @@ const TableComponent = () => {
           </h1>
         ) : null}
       </div>
-      <div className="mt-4 flex h-[2rem] items-center justify-between capitalize">
+      <div className="flex h-[2rem] items-center justify-around py-12 capitalize md:justify-between md:py-8">
         <span className="hidden lg:table-cell">
           Data provided by{" "}
           <a
