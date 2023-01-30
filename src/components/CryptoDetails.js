@@ -226,7 +226,7 @@ const CryptoDetails = () => {
                   <span className="text-sm text-gray-100 capitalize">
                     circulating supply
                   </span>
-                  <h2 className="ml-8 text-base font-bold">
+                  <h2 className="text-base font-bold">
                     {new Intl.NumberFormat("en-US", {
                       style: "decimal",
                       useGrouping: true,
