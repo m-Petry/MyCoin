@@ -96,13 +96,13 @@ const TableComponent = () => {
                       </Link>
                     </td>
                     <td className="py-4">
-                      {new Intl.NumberFormat("en-IN", {
+                      {new Intl.NumberFormat("en-US", {
                         style: "currency",
                         currency: currency
                       }).format(data.current_price)}
                     </td>
                     <td className="hidden py-4 lg:table-cell">
-                      {data.total_volume}
+                      {data.total_volume.toLocaleString()}
                     </td>
                     <td className="hidden py-4 lg:table-cell">
                       {data.market_cap_change_percentage_24h}%

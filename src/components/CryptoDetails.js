@@ -141,7 +141,7 @@ const CryptoDetails = () => {
                     {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
-                      minimumFractionDigits: 0
+                      minimumFractionDigits: 2
                     }).format(data.market_data.market_cap[currency])}
                   </h2>
                 </div>
@@ -169,7 +169,7 @@ const CryptoDetails = () => {
                   {new Intl.NumberFormat("en-US", {
                     style: "currency",
                     currency: currency,
-                    minimumFractionDigits: 0
+                    minimumFractionDigits: 2
                   }).format(data.market_data.total_volume[currency])}
                 </h2>
               </div>
@@ -191,7 +191,7 @@ const CryptoDetails = () => {
                     {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
-                      minimumFractionDigits: 3
+                      minimumFractionDigits: 2
                     }).format(data.market_data.low_24h[currency])}
                   </h2>
                 </div>
@@ -203,7 +203,7 @@ const CryptoDetails = () => {
                     {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
-                      minimumFractionDigits: 3
+                      minimumFractionDigits: 2
                     }).format(data.market_data.high_24h[currency])}
                   </h2>
                 </div>
@@ -216,8 +216,8 @@ const CryptoDetails = () => {
                   </span>
                   <h2 className="text-base font-bold">
                     {new Intl.NumberFormat("en-US", {
-                      style: "currency",
-                      currency: currency,
+                      style: "decimal",
+                      useGrouping: true,
                       minimumFractionDigits: 0
                     }).format(data.market_data.max_supply)}
                   </h2>
@@ -226,10 +226,10 @@ const CryptoDetails = () => {
                   <span className="text-sm text-gray-100 capitalize">
                     circulating supply
                   </span>
-                  <h2 className="text-base font-bold">
+                  <h2 className="ml-8 text-base font-bold">
                     {new Intl.NumberFormat("en-US", {
-                      style: "currency",
-                      currency: currency,
+                      style: "decimal",
+                      useGrouping: true,
                       minimumFractionDigits: 0
                     }).format(data.market_data.circulating_supply)}
                   </h2>
