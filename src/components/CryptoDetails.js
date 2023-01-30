@@ -56,7 +56,7 @@ const CryptoDetails = () => {
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          className="absolute top-0 right-0 z-50 px-3 py-1 mt-4 mr-4 text-white bg-gray-200 border-gray-100 rounded-md border-1 text-md hover:bg-gray-100"
+          className="border-1 absolute top-0 right-0 z-50 mt-4 mr-4 rounded-md border-gray-100 bg-gray-200 px-3 py-[2px] text-md text-white hover:bg-red"
           onClick={close}
         >
           X
@@ -123,7 +123,7 @@ const CryptoDetails = () => {
                     </div>
                   </div>
                   <h2 className="text-lg font-bold">
-                    {new Intl.NumberFormat("en-IN", {
+                    {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
                       maximumSignificantDigits: 5
@@ -138,7 +138,7 @@ const CryptoDetails = () => {
                     Market Cap
                   </span>
                   <h2 className="text-base font-bold">
-                    {new Intl.NumberFormat("en-IN", {
+                    {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
                       minimumFractionDigits: 0
@@ -150,7 +150,7 @@ const CryptoDetails = () => {
                     fully diluted valuation
                   </span>
                   <h2 className="text-base font-bold">
-                    {new Intl.NumberFormat("en-IN", {
+                    {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
                       notation: "compact"
@@ -166,7 +166,7 @@ const CryptoDetails = () => {
                   total volume
                 </span>
                 <h2 className="text-base font-bold">
-                  {new Intl.NumberFormat("en-IN", {
+                  {new Intl.NumberFormat("en-US", {
                     style: "currency",
                     currency: currency,
                     minimumFractionDigits: 0
@@ -188,10 +188,10 @@ const CryptoDetails = () => {
                     Low 24H
                   </span>
                   <h2 className="text-base font-bold">
-                    {new Intl.NumberFormat("en-IN", {
+                    {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
-                      minimumFractionDigits: 5
+                      minimumFractionDigits: 3
                     }).format(data.market_data.low_24h[currency])}
                   </h2>
                 </div>
@@ -200,10 +200,10 @@ const CryptoDetails = () => {
                     high 24H
                   </span>
                   <h2 className="text-base font-bold">
-                    {new Intl.NumberFormat("en-IN", {
+                    {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
-                      minimumFractionDigits: 5
+                      minimumFractionDigits: 3
                     }).format(data.market_data.high_24h[currency])}
                   </h2>
                 </div>
@@ -215,7 +215,7 @@ const CryptoDetails = () => {
                     max supply
                   </span>
                   <h2 className="text-base font-bold">
-                    {new Intl.NumberFormat("en-IN", {
+                    {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
                       minimumFractionDigits: 0
@@ -227,7 +227,7 @@ const CryptoDetails = () => {
                     circulating supply
                   </span>
                   <h2 className="text-base font-bold">
-                    {new Intl.NumberFormat("en-IN", {
+                    {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: currency,
                       minimumFractionDigits: 0
@@ -481,7 +481,7 @@ const CryptoDetails = () => {
               className="w-8 h-8 border-4 rounded-full animate-spin border-cyan border-b-gray-200 "
               role="status"
             />
-            <span className="ml-2">please wait...</span>
+            <span className="ml-2">Please wait...</span>
           </div>
         )}
       </div>
